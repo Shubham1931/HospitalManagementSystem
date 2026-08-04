@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Custom styles for your navbar */
+        #nav1 {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        #icon1 {
+            display: flex;
+            align-items: center;
+        }
+        #quote {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        #icon2 {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .hamburger {
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="nav1">
+    <div id="icon1">
+        <div id="iconImg">
+            <span class="material-symbols-outlined">medical_services</span>
+        </div>
+        <div id="quote">24 hours emergency & ambulance Service: +321 789 01 2345</div>
+    </div>
+    <div id="icon2">
+        <img src="img/facebook-2935402_1280-removebg-preview.png" alt="" height="40px" width="40px">
+        <img src="img/instagram-2935404_1280-removebg-preview.png" alt="" height="40px" width="40px">
+        <img src="img/linkedin-2935407_1280-removebg-preview.png" alt="" height="40px" width="40px">
+        <img src="img/twitter-2935414_1280-removebg-preview.png" alt="" height="40px" width="40px">
+        <img src="img/download-removebg-preview (4).png" class="hamburger" id="ham" height="42px" onclick="navShow()">
+
+        <!-- Login Button -->
+        <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#loginModal">
+            Login
+        </button>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <small class="text-muted">Don't have an account? <a href="signup.jsp">Sign up</a></small>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
